@@ -1,4 +1,4 @@
-# MAKRDOWN PREVIEWER
+# MARKDOWN PREVIEWER
 
 This is the second project included in the *freeCodeCamp* **Front End Development Libraries Certification**.
 
