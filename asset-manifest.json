@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/FCC-Markdown-Previewer/static/css/main.d003bf53.css",
+    "main.css": "/FCC-Markdown-Previewer/static/css/main.2ee5214b.css",
     "main.js": "/FCC-Markdown-Previewer/static/js/main.ecdb6e69.js",
     "index.html": "/FCC-Markdown-Previewer/index.html",
-    "main.d003bf53.css.map": "/FCC-Markdown-Previewer/static/css/main.d003bf53.css.map",
+    "main.2ee5214b.css.map": "/FCC-Markdown-Previewer/static/css/main.2ee5214b.css.map",
     "main.ecdb6e69.js.map": "/FCC-Markdown-Previewer/static/js/main.ecdb6e69.js.map"
   },
   "entrypoints": [
-    "static/css/main.d003bf53.css",
+    "static/css/main.2ee5214b.css",
     "static/js/main.ecdb6e69.js"
   ]
 }
