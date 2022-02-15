@@ -3,35 +3,35 @@ import ReactDOM from "react-dom";
 import ReactMarkdown from 'react-markdown';
 import './styles.scss';
 
-const markdown = `# HEADING 1
-## HEADING 2
-### HEADING 3
+const markdown = `# This is a markdown previewer
+---
+## Headings can be added by typing "#" as seen in the editor
+### The amount of "#" indicates the heading number; this would be heading 3
 
-*italics*
+You can also use *italics* and **bolded** text wherever you wish.
 
-**bold**
+> Moreover, there are Blockquotes too!
 
-> Blockquote for quoting stuff basically 
+And you can write in-line code like this: \`console.log("Very important code");\` In-line means it's located inside regular text.
 
-\`and here's some code\`
+Markdown has links; here is [a link to my GitHub profile](https://github.com/Roman-Octavian).
 
-[A link to my GitHub profile](https://github.com/Roman-Octavian)
-
+There are unordered and ordered lists too:
 * Unordered list element
 * Unordered list element
 1. Ordered list element
 1. Ordered list element
 
-Here's a code block:
+Here's a code block, for a change:
 
     public class Main {
         public static void main(String args[]) {
             System.out.println("Hello World!");
         }
     }
+And, lastly, images can also be embedded with Markdown:
 
-![image](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/270px-React-icon.svg.png)
-`
+![React logo, this is alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/270px-React-icon.svg.png)`
 
 
 class MainContent extends React.Component {
@@ -57,11 +57,16 @@ class MainContent extends React.Component {
         return(
             <div>
                 <h1 id="title">Markdown Previewer</h1>
-                <h2 id="editor-title">Editor:</h2>
-                <textarea id="editor" value={this.state.input} onChange={this.handleInput} />
-                <h2 id="previewer-title">Previewer:</h2>
-                <div id="preview">
-                    <ReactMarkdown source={markdown} escapeHtml={false}>{this.state.input}</ReactMarkdown>
+                <div id="textarea-div">
+                    <h2 class="subtitle">EDITOR:</h2>
+                    <textarea id="editor" value={this.state.input} onChange={this.handleInput} />
+                    <button onClick={this.handleClick}>Clear Editor</button>
+                </div>
+                    <div id="previewer-div">
+                        <h2 class="subtitle">PREVIEWER:</h2>
+                        <div id="preview">
+                        <ReactMarkdown>{this.state.input}</ReactMarkdown>
+                    </div>
                 </div>
             </div>
         )

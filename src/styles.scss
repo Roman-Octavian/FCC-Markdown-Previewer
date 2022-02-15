@@ -2,8 +2,6 @@
 
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 @mixin border-box($bc, $b, $br, $p, $w, $h) {
@@ -18,9 +16,25 @@
 #title {
     font-family: "Montserrat", Arial;
     font-size: 5vh;
+    border-bottom :2px solid #ccc;
+    text-align: center;
+    justify-self: center;
+    margin-top: 1vh;
+    padding-bottom: 1vh;
 }
 
-#textarea-div {
+.subtitle {
+    text-align: center;
+    justify-self: center;
+    font-size: 1.5vh;
+    margin-top: 1.5vh;
+}
+button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#editor{
     background-color: #f8f8f8;
 }
 
@@ -31,12 +45,20 @@ textarea {
     outline: none;  
     resize: none;
     overflow: auto;
-    @include border-box(#f8f8f8, 2px solid #ccc, 4px, 12px 20px, 50vw, 40vh);
+    @include border-box(#f8f8f8, 3px solid #ccc, 4px, 12px 20px, 50vw, 30vh);
 }
 
 #preview {
     display: block;
     margin-left: auto;
     margin-right: auto; 
-     @include border-box(#f8f8f8, 2px solid #ccc, 4px, 12px 20px, 50vw, auto);
+     @include border-box(#f8f8f8, 3px solid #ccc, 4px, 12px 20px, 50vw, auto);
+     min-height: 30vh;
+}
+
+code {
+    display: inline-block;
+    background-color: #EFF7FA;
+    background-clip: padding-box;
+    padding: 5px;
 }
