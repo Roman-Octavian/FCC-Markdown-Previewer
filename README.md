@@ -15,6 +15,7 @@ This is the second project included in the *freeCodeCamp* **Front End Developmen
     - SASS
 - JavaScript
     - ReactJS
+        - react-markdown
 
 ### Branch Descriptions:
 

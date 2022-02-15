@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 
 * {
     box-sizing: border-box;
@@ -15,6 +16,7 @@
 
 #title {
     font-family: "Montserrat", Arial;
+    color: #3700b3;
     font-size: 5vh;
     border-bottom :2px solid #ccc;
     text-align: center;
@@ -28,11 +30,19 @@
     justify-self: center;
     font-size: 1.5vh;
     margin-top: 1.5vh;
+    font-family: "Oswald", helvetica;
+    color: #3700b3;
 }
 button {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 5px;
+    background-color: #3700b3;
+    color: white;
+    border-radius: 4px;
+    border-style: none;
+    padding: 6px 4px 6px 4px;
 }
 #editor{
     background-color: #f8f8f8;
@@ -52,13 +62,57 @@ textarea {
     display: block;
     margin-left: auto;
     margin-right: auto; 
-     @include border-box(#f8f8f8, 3px solid #ccc, 4px, 12px 20px, 50vw, auto);
-     min-height: 30vh;
+    margin-bottom: 1vh;
+    @include border-box(#f8f8f8, 3px solid #ccc, 4px, 12px 20px, 50vw, auto);
+    min-height: 30vh;
 }
 
 code {
     display: inline-block;
-    background-color: #EFF7FA;
+    background-color: rgb(224, 224, 224);
     background-clip: padding-box;
-    padding: 5px;
+    background-blend-mode: darken;
+    padding: 0.5em;
+}
+
+blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+}
+
+@media only screen and (min-width: 1px) and (max-width: 600px) {
+    #title {
+        font-size: 3vh;
+    }
+    .subtitle {
+        font-size: 3vh;
+        margin-top: 1vh;
+    }
+    textarea {
+        @include border-box(#f8f8f8, 3px solid #ccc, 4px, 12px 20px, 85vw, 30vh);
+    }
+    #preview {
+        @include border-box(#f8f8f8, 3px solid #ccc, 4px, 12px 20px, 85vw, auto);
+        overflow-x: scroll;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    #title {
+        font-size: 3vh;
+    }
+    .subtitle {
+        font-size: 3vh;
+        margin-top: 1vh;
+    }
+    textarea {
+        @include border-box(#f8f8f8, 3px solid #ccc, 4px, 12px 20px, 90vw, 30vh);
+    }
+    #preview {
+        @include border-box(#f8f8f8, 3px solid #ccc, 4px, 12px 20px, 90vw, auto);
+        overflow-x: scroll;
+    }
+
 }
