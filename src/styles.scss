@@ -17,7 +17,7 @@
 #title {
     font-family: "Montserrat", Arial;
     color: #3700b3;
-    font-size: 5vh;
+    font-size: 5em;
     border-bottom :2px solid #ccc;
     text-align: center;
     justify-self: center;
@@ -28,7 +28,7 @@
 .subtitle {
     text-align: center;
     justify-self: center;
-    font-size: 1.5vh;
+    font-size: 1.5em;
     margin-top: 1.5vh;
     font-family: "Oswald", helvetica;
     color: #3700b3;
@@ -84,10 +84,10 @@ blockquote {
 
 @media only screen and (min-width: 1px) and (max-width: 600px) {
     #title {
-        font-size: 3vh;
+        font-size: 2em;
     }
     .subtitle {
-        font-size: 3vh;
+        font-size: 1.5em;
         margin-top: 1vh;
     }
     textarea {
@@ -101,10 +101,10 @@ blockquote {
 
 @media only screen and (min-width: 601px) and (max-width: 992px) {
     #title {
-        font-size: 3vh;
+        font-size: 3em;
     }
     .subtitle {
-        font-size: 3vh;
+        font-size: 1.5em;
         margin-top: 1vh;
     }
     textarea {
